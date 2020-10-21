@@ -1,0 +1,32 @@
+.order-status-container {
+  width: 100%;
+  height: calc(100vh - 50px);
+  overflow-y: scroll;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    padding: 30px 50px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+  .item-status-container {
+    padding: 20px;
+  }
+
+  .item-status-container h4{
+    margin: 10px 0;
+    font-size: 20px;
+  }
+
+  .item-status-container p{
+    font-size: small;
+    color: gray;
+  }
