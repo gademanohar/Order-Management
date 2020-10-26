@@ -4,7 +4,7 @@ import iphoneimg from '../../images/iPhoneXr_White_PureAngles.jpeg';
 import './OrderStatus.css';
 import moment from 'moment';
 
-export default function OrderStatus() {
+const OrderStatus = (props) => {
 
   const [orders, setOrders] = useState([]);
 
@@ -13,10 +13,14 @@ export default function OrderStatus() {
     setOrders(ordersList);
   }, []);
 
+  const handleOrderClick = (item) => {
+    props.history.push(`/orderDetails?id=${item.id}`)
+  }
+
   const renderItems = (order) => {
     return (order && order.items.map((item, index) => {
       return (
-        <div className="card">
+        <div className="card" onClick={handleOrderClick(item)}>
           <img src={iphoneimg} alt="iphone" />
           <div className="item-status-container">
             <p>{moment(item.newEstimatedShipDateRange.toDate).isSameOrBefore(new Date()) ?
@@ -52,3 +56,5 @@ export default function OrderStatus() {
     </>
   );
 }
+
+export default OrderStatus;

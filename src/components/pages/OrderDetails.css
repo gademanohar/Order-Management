@@ -1,0 +1,86 @@
+.order-details-container {
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: 20px;
+    border: 1px solid gray;
+}
+
+.order-details-container p{
+    font-size: small;
+    color: gray;
+}
+
+.order-details-container h5{
+    margin-bottom: 10px;
+}
+
+.address-cont h4{
+    display: inline;
+}
+
+.items-count {
+    margin-bottom: 10px;
+}
+
+.notify-msg {
+    color: gray;
+    font-size: small;
+    margin-bottom: 10px;
+}
+
+.shipping-cont {
+    margin-bottom: 10px;
+}
+
+.usps-tracking {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.status-ind {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.status-ind span{
+    margin-right: 10px;
+}
+
+.status-ind .gray{
+    color: gray;
+}
+
+.confirm-msg {
+    margin-bottom: 10px;
+}
+
+.btn-cont {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-cont button {
+    width: 250px;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.btn-cont .primary{
+    background: blue;
+    color: white;
+}
+
+.img-cont {
+    width: 55px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+.items-cont {
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+}
